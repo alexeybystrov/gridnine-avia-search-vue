@@ -8,12 +8,6 @@ const getters = {
   },
 };
 
-const actions = {
-  // sortBy({ commit }, payload) {
-  //   commit('sortBy', payload);
-  // }
-};
-
 const mutations = {
   sortBy(state, payload) {
     state.sort = payload;
@@ -23,6 +17,5 @@ const mutations = {
 export default {
   state,
   getters,
-  actions,
   mutations,
 };

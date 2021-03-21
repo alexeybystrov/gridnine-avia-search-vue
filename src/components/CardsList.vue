@@ -1,9 +1,9 @@
 <template>
-    <div id="cardsList" class="col h-100">
-      <div v-for="flight in totalGetter" :key="flight.id">
-        <Card :flight="flight" />
-      </div>
+  <div id="cardsList" class="col h-100">
+    <div v-for="flight in totalGetter" :key="flight.id">
+      <Card :flight="flight" />
     </div>
+  </div>
 </template>
 
 <script>
@@ -14,11 +14,6 @@ export default {
   name: 'CardsList',
   components: { Card },
   computed: mapGetters(['totalGetter']),
-  // methods: {
-  //   getUniqueID() {
-  //     this.id = _.getUniqueID()
-  //   }
-  // }
 };
 </script>
 

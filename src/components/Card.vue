@@ -100,12 +100,6 @@ export default {
   methods: {
     getFormatedDate,
     getFormatedTime,
-    // showTransfers(transfers) {
-    //   if (transfers !== 0) {
-    //     return 'Пересадки: ' + transfers;
-    //   }
-    // }
   },
 };
-
 </script>
