@@ -14,17 +14,17 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import SearchMenu from './SearchMenu'
-import CardsList from './CardsList'
+import SearchMenu from './SearchMenu.vue';
+import CardsList from './CardsList.vue';
 
 export default {
   name: 'App',
   components: {
     // HelloWorld
     SearchMenu,
-    CardsList
-  }
-}
+    CardsList,
+  },
+};
 </script>
 
 <style>

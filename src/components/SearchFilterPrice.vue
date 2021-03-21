@@ -25,7 +25,8 @@
 </template>
 
 <script>
-import { mapMutations } from "vuex";
+import { mapMutations } from 'vuex';
+
 export default {
   name: 'SearchFilterPrice',
   methods: {
@@ -41,7 +42,7 @@ export default {
         default:
           throw new Error('Unknown field name');
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>

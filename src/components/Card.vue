@@ -12,11 +12,11 @@
     <div class="card-body border border-light">
       <div class="d-flex">
         <div>
-          {{flight.leftLeg.departureCity.caption}}, 
+          {{flight.leftLeg.departureCity.caption}},&#160;
           {{flight.leftLeg.departureAirport.caption}}
           ({{flight.leftLeg.departureAirport.uid}})
           &rarr;
-          {{flight.leftLeg.arrivalCity.caption}}, 
+          {{flight.leftLeg.arrivalCity.caption}},&#160;
           {{flight.leftLeg.arrivalAirport.caption}}
           ({{flight.leftLeg.arrivalAirport.uid}})
         </div>
@@ -50,11 +50,11 @@
     <div class="card-body border-top">
       <div class="d-flex">
         <div>
-          {{flight.rightLeg.departureCity.caption}}, 
+          {{flight.rightLeg.departureCity.caption}},&#160;
           {{flight.rightLeg.departureAirport.caption}}
           ({{flight.rightLeg.departureAirport.uid}})
           &rarr;
-          {{flight.rightLeg.arrivalCity.caption}}, 
+          {{flight.rightLeg.arrivalCity.caption}},&#160;
           {{flight.rightLeg.arrivalAirport.caption}}
           ({{flight.rightLeg.arrivalAirport.uid}})
         </div>
@@ -92,7 +92,8 @@
 </template>
 
 <script>
-import { getFormatedDate, getFormatedTime } from '../utils'
+import { getFormatedDate, getFormatedTime } from '../utils';
+
 export default {
   name: 'Card',
   props: ['flight'],
@@ -104,7 +105,7 @@ export default {
     //     return 'Пересадки: ' + transfers;
     //   }
     // }
-  }
-}
+  },
+};
 
 </script>

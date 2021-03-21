@@ -8,12 +8,15 @@
 </template>
 
 <script>
-import SearchSort from './SearchSort'
-import SearchFilterTransfers from './SearchFilterTransfers'
-import SearchFilterPrice from './SearchFilterPrice'
-import SearchFilterCarriers from './SearchFilterCarriers'
+import SearchSort from './SearchSort.vue';
+import SearchFilterTransfers from './SearchFilterTransfers.vue';
+import SearchFilterPrice from './SearchFilterPrice.vue';
+import SearchFilterCarriers from './SearchFilterCarriers.vue';
+
 export default {
   name: 'SearchMenu',
-  components: { SearchSort, SearchFilterTransfers, SearchFilterPrice, SearchFilterCarriers },
-}
+  components: {
+    SearchSort, SearchFilterTransfers, SearchFilterPrice, SearchFilterCarriers,
+  },
+};
 </script>

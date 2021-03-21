@@ -23,14 +23,15 @@
 </template>
 
 <script>
-import { mapMutations } from "vuex";
+import { mapMutations } from 'vuex';
+
 export default {
   name: 'SearchSort',
   methods: {
     ...mapMutations(['sortBy']),
     handleChange(e) {
       this.sortBy(e.target.value);
-    }
-  }
-}
+    },
+  },
+};
 </script>

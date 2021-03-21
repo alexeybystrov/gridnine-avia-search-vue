@@ -8,7 +8,7 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import Card from './Card'
+import Card from './Card.vue';
 
 export default {
   name: 'CardsList',
@@ -19,7 +19,7 @@ export default {
   //     this.id = _.getUniqueID()
   //   }
   // }
-}
+};
 </script>
 
 <style>

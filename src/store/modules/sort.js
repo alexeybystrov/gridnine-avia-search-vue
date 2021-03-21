@@ -1,10 +1,10 @@
 const state = () => ({
-  sort: ''
+  sort: '',
 });
 
 const getters = {
   sortStatus(state) {
-    return state.sort
+    return state.sort;
   },
 };
 
@@ -17,7 +17,7 @@ const actions = {
 const mutations = {
   sortBy(state, payload) {
     state.sort = payload;
-  }
+  },
 };
 
 export default {
@@ -25,4 +25,4 @@ export default {
   getters,
   actions,
   mutations,
-}
+};

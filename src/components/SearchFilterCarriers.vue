@@ -4,7 +4,13 @@
     <div v-for="carrier in carriers" :key="carrier">
       <div class="form-check">
         <label class="form-check-label">
-          <input type="checkbox" :value="carrier" class="form-check-input" v-model="checknames" :disabled="isDisabled(carrier)" />
+          <input
+            type="checkbox"
+            :value="carrier"
+            class="form-check-input"
+            v-model="checknames"
+            :disabled="isDisabled(carrier)"
+          />
           {{carrier}}
         </label>
       </div>
@@ -13,14 +19,15 @@
 </template>
 
 <script>
-import { mapGetters, mapMutations } from "vuex";
+import { mapGetters, mapMutations } from 'vuex';
 import _ from 'lodash';
+
 export default {
   name: 'SearchFilterCarriers',
   data() {
     return {
-      checknames: []
-    }
+      checknames: [],
+    };
   },
   computed: mapGetters(['carriers', 'availableCarriers']),
   methods: {
@@ -29,8 +36,8 @@ export default {
       this.filterCarriers(this.checknames);
     },
     isDisabled(carrier) {
-       return !_.includes(this.availableCarriers, carrier);
-    }
-  }
-}
+      return !_.includes(this.availableCarriers, carrier);
+    },
+  },
+};
 </script>

@@ -34,9 +34,9 @@ export const getNormalizedFlights = (rawFlights) => rawFlights.result.flights
       rightLeg,
       totalDuration: leftLeg.duration + rightLeg.duration,
       totalTransfers: _.max([leftLeg.transfers, rightLeg.transfers]),
-      id: _.uniqueId()
+      id: _.uniqueId(),
     };
-});
+  });
 
 export const getFormatedDate = (date) => {
   const options = {

@@ -13,12 +13,12 @@ const state = () => ({
 
 const getters = {
   filterStatus(state) {
-    return state.filter
+    return state.filter;
   },
 };
 
 const actions = {
-  
+
 };
 
 const mutations = {
@@ -50,4 +50,4 @@ export default {
   getters,
   actions,
   mutations,
-}
+};
