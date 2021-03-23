@@ -1,5 +1,5 @@
 <template>
-  <section class="mb-3" @change="handleChange">
+  <section class="mb-3" @input="handleInput">
     <div class="font-weight-bold">Цена</div>
     <div class="form-group row mb-1">
       <label htmlFor="priceFrom" class="col-1 col-form-label">От</label>
@@ -31,7 +31,7 @@ export default {
   name: 'SearchFilterPrice',
   methods: {
     ...mapMutations(['filterPriceFrom', 'filterPriceUpTo']),
-    handleChange(e) {
+    handleInput(e) {
       switch (e.target.name) {
         case 'priceFrom':
           this.filterPriceFrom(Number(e.target.value));
